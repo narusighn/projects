@@ -1,9 +1,36 @@
-.my_nav_bar{
+.my_nav_bar {
     position: sticky;
-        top:0
-            
+    top: 0
 }
-#Outside{
-    width: 200px;
-    height: 200px;
+
+#Outside {
+    width: 650px;
+    height: 650px;
 }
+
+#Library {
+    width: 650px;
+    height: 650px;
+}
+
+#me {
+    width: 650px;
+    height: 650px;
+}
+
+#outside {
+    text-align: center; 
+}
+#library{
+    text-align: center; 
+}
+#ME{
+    text-align: center; 
+}
+#Tests{
+    background-color: azure;
+}
+#Basketball{
+    background-color: oldlace;
+}
+
