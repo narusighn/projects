@@ -1,36 +1,74 @@
-.my_nav_bar {
-    position: sticky;
-    top: 0
+#a{
+    width: 500px;
+    height: 500px;
 }
 
-#Outside {
-    width: 650px;
-    height: 650px;
+#b{
+    width: 500px;
+    height: 500px;
 }
 
-#Library {
-    width: 650px;
-    height: 650px;
+#c{
+    width: 500px;
+    height: 500px;
 }
 
-#me {
-    width: 650px;
-    height: 650px;
+#d{
+    width: 500px;
+    height: 500px;
 }
 
-#outside {
-    text-align: center; 
-}
-#library{
-    text-align: center; 
-}
-#ME{
-    text-align: center; 
-}
-#Tests{
-    background-color: azure;
-}
-#Basketball{
-    background-color: oldlace;
+#e{
+    width: 500px;
+    height: 500px;
 }
 
+#f{
+    width: 500px;
+    height: 500px;
+}
+
+#g{
+    width: 1000px;
+    height: 500px;
+}
+
+#h{
+    width: 500px;
+    height: 500px;
+}
+
+#i{
+    width: 500px;
+    height: 500px;
+}
+
+#j{
+    width: 500px;
+    height: 500px;
+}
+
+#k{
+    width: 500px;
+    height: 500px;
+}
+
+#l{
+    width: 500px;
+    height: 500px;
+}
+
+#m{
+    width: 500px;
+    height: 500px;
+}
+
+#n{
+     width: 500px;
+    height: 500px;
+}
+
+#o{
+     width: 500px;
+    height: 500px;
+}
