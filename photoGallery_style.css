@@ -1,0 +1,10 @@
+h1{
+    color: crimson;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+#image{
+    border: violet;
+    border-width: 10px;
+}
