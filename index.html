@@ -1,173 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Math Quiz Game</title>
 
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
 
-<body>
-    <div>
-    <img src="Ant%20man.jpg" id="a">
-    <img src="black%20panther.jpg" id="b">
-    <img src="black%20widow.jpg" id="c">
-    <img src="captain%20America.jpg" id="d">
-    <img src="captain%20marvel.jpg" id="e">
-    <img src="Clint%20Bardon.jpg" id="f">
-    <img src="Doctor%20Strange.jpg" id="g">
-    <img src="drax.jpg" id="h">
-    <img src="Gamora.jpg" id="i">
-    <img src="groot%20and%20rocket.jpg" id="j">
-    <img src="hulk.jpg" id="k">
-    <img src="mantis.jpg" id="l">
-    <img src="Star%20Lord.jpg" id="m">
-    <img src="thanos.jpg" id="n">
-    <img src="thor.jpg" id="o">
-    </div>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <div class="container">
-        <h1>Click on the image to know more about the characters</h1>
-        <div id="divA" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="item active">
-                    <center>
-                        <a href="https://en.wikipedia.org/wiki/Ant-Man_(film)" target="_blank"><img src=Ant%20man.jpg class="img-responsive"></a>
-                        <div class="carousel-content">
-                        <p>Ant man</p>
-                        </div>
-                    </center>
-                </div>
-                <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Black_Panther_(film)" target="_blank"><img src=black%20panther.jpg class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Black panther</p>
-                    </div>
-                    </center>
-                </div>
-                 <div class="item">
-                <center>
-                    <a href=https://en.wikipedia.org/wiki/Black_Widow_(2021_film) target="_blank"><img src="black%20widow.jpg" class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Black Widow</p>
-                    </div>
-                    </center>
-                </div>sss
-                 <div class="item">
-                <center>
-                    <a href=https://en.wikipedia.org/wiki/Captain_America target="_blank"><img src="captain%20America.jpg" class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Captain America</p>
-                    </div>
-                    </center>
-                </div>
-                 <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Captain_Marvel_(film)" target="_blank"><img src= "captain%20marvel.jpg" class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Captain Marvel</p>
-                    </div>
-                    </center>
-                </div>
-                
-                 <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Clint_Bardon_(film)" target="_blank"><img src="Clint%20Bardon.jpg" class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Clint Bardon</p>
-                    </div>
-                    </center>
-                </div>
-                 <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Doctor_Strange_(film)" target="_blank"><img src="Doctor%20Strange.jpg" class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Doctor Strange</p>
-                    </div>
-                    </center>
-                </div>
-                
-                 <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Drax_(film)" target="_blank"><img src="drax.jpg" class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Drax</p>
-                    </div>
-                    </center>
-                </div>
-                 <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Gamora_(film)" target="_blank"><img src="Gamora.jpg"class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Gamora</p>
-                    </div>
-                    </center>
-                </div>
-                
-                <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Rocket_%26_Groot" target="_blank"><img src="groot%20and%20rocket.jpg"class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Groot and Rocket</p>
-                    </div>
-                    </center>
-                </div>
-                
-                <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Hulk" target="_blank"><img src="hulk.jpg"class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Hulk</p>
-                    </div>
-                    </center>
-                </div>
-                
-                <div class="item">
-                <center>
-                    <a href="" target="_blank"><img src="mantis.jpg"class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>mantis</p>
-                    </div>
-                    </center>
-                </div>
-                
-                 <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Star-Lord" target="_blank"><img src="Star%20Lord.jpg"class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Star Lord</p>
-                    </div>
-                    </center>
-                </div>
-                
-                <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Thanos" target="_blank"><img src="thanos.jpg"class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Thanos</p>
-                    </div>
-                    </center>
-                </div>
-                
-                 <div class="item">
-                <center>
-                    <a href="https://en.wikipedia.org/wiki/Thor_(film)" target="_blank"><img src="thor.jpg"class="img-responsive"></a>
-                    <div class="carousel-content">
-                    <p>Thor</p>
-                    </div>
-                    </center>
-                </div>
-            </div>
-            <a class="left carousel-control" href="#divA" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" ></span></a>
-            
-            <a class="right carousel-control" href="#divA" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" ></span></a>
+    </head>
+
+    <body id="login_screen">
+
+       <div id="img_div">
+           <img src="login_img.jpg">
+       </div>
+
+       <div id="screen_div">
+        <center>
+
+            <h1>Math Quiz Game</h1>
+
+            <br>
+            <br>
+
+        <div class="col-lg-4 col-sm-8 col-xs-11" id="login_div1">
+            <h3>Player 1</h3>
+            <label>User name</label>
+            <input type="text" placeholder="Player 1 name" class="form-control" id="player_1">
+            <br>
         </div>
-    </div>
+        
+        <br>
 
-</body>
+        <div class="col-lg-4 col-sm-8 col-xs-11" id="login_div2">
+            <h3>Player 2</h3>
+            <label>User name</label>
+            <input type="text" placeholder="Player 2 name" class="form-control" id="player_2">
+            <br>
+        </div>
 
+        <button id="login_button" onclick="login()">Login</button>
+
+        </center>
+       </div>
+
+
+        <script href="main.js"></script> 
+    </body>
 </html>

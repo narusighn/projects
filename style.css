@@ -1,74 +1,24 @@
-#a{
-    width: 500px;
+img{
     height: 500px;
+    width: 2000px;
 }
 
-#b{
-    width: 500px;
-    height: 500px;
+#login_div1{
+    background-color: skyblue;
+    margin-bottom: 50px;
+    margin-left: 575px;
 }
 
-#c{
-    width: 500px;
-    height: 500px;
+#screen_div{
+    text-align: center;
 }
 
-#d{
-    width: 500px;
-    height: 500px;
+#login_div2{
+    background-color: skyblue;
+    margin-right: 1000px;
+    margin-left: 575px;
 }
 
-#e{
-    width: 500px;
-    height: 500px;
-}
-
-#f{
-    width: 500px;
-    height: 500px;
-}
-
-#g{
-    width: 1000px;
-    height: 500px;
-}
-
-#h{
-    width: 500px;
-    height: 500px;
-}
-
-#i{
-    width: 500px;
-    height: 500px;
-}
-
-#j{
-    width: 500px;
-    height: 500px;
-}
-
-#k{
-    width: 500px;
-    height: 500px;
-}
-
-#l{
-    width: 500px;
-    height: 500px;
-}
-
-#m{
-    width: 500px;
-    height: 500px;
-}
-
-#n{
-     width: 500px;
-    height: 500px;
-}
-
-#o{
-     width: 500px;
-    height: 500px;
+#login_button{
+    margin-top: 150px;
 }
