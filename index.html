@@ -1,67 +1,42 @@
 <html>
     <head>
-        <title>Simple Console Programming</title>
+        <title>Guest List</title>
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
+
     <body>
         <center>
-        <h1>Simple Console Programming</h1>
 
-        <h2>Opening Console</h2>
-        <p>Step 1:r Right click and click Inspect
+        <h1>Guest List</h1>
 
+        <input id="guest_1" placeholder="Guest 1" type="text">
             <br>
-            Step 2:Click second option called Console
-
             <br>
-            Note if opening webpage for first time reload and open again to see no difficulty in veiwing console.
-            
+        <button id="add_list_butt" onclick="add()">Add to list</button>
             <br>
-            Step 3:You have opened console Enjoy
-        </p>
-
-        <script>
-
-            var name="Narayani";
-            console.log(name);
-
-            var hobbies="Drawing and Coding"
-            console.log(hobbies);
-
-            var age="11"
-            console.log(age);
-
-            var DOB="16th January 2010"
-            console.log(DOB);
-
-            var fav_actor_1="Kishore"
-            console.log(fav_actor_1);
-
-            var fav_actor_2="Kumar"
-            console.log(fav_actor_2);
-
-            var fav_actor=fav_actor_1 + fav_actor_2
-            console.log(fav_actor);
-
-            var fav_movie="Padosi"
-            console.log(fav_movie);
-
-            var fav_song="Ek a Chatur nari badi hoshiar"
-            console.log(fav_song);
-
-            var no="22"
-            console.log(no);
-
-            var no_1="11"
-            console.log(no_1);
-
-            var answer= "33"
-            console.log(answer);
-
-        </script>
+            <br>
+        <div id="display_div">
+        </div>
+            <br>
+            <br>
+        <button id="show_list_butt" onclick="show()">Show the list</button>
+            <br>
+            <br>
+       <input id="search_input" placeholder="Search Guest Nname" type="text">
+            <br>
+            <br>
+        <h3 id="searched_names"></h3>
+            <br>
+            <br>
+        <button id="search_name" onclick="search()">search a name</button>
+            <br>
+            <br>
+        
         </center>
+        <script src="main.js"></script>
     </body>
 </html>
