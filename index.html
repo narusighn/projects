@@ -1,42 +1,51 @@
 <html>
     <head>
-        <title>Guest List</title>
+        <title>Math Quiz Game</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     </head>
 
-    <body>
+    <body id="login_screen">
+
+       
+
+       <div id="screen_div">
         <center>
+            <div id="intro div">
+            <h1>Math Quiz Game</h1>
 
-        <h1>Guest List</h1>
-
-        <input id="guest_1" placeholder="Guest 1" type="text">
             <br>
             <br>
-        <button id="add_list_butt" onclick="add()">Add to list</button>
+             </div>
+        <div class="col-lg-4 col-sm-8 col-xs-11" id="login_div1">
+            <h3>Player 1</h3>
+            <label>User name</label>
+            <input type="text" placeholder="Player 1 name" class="form-control" id="player_1">
             <br>
-            <br>
-        <div id="display_div">
         </div>
-            <br>
-            <br>
-        <button id="show_list_butt" onclick="show()">Show the list</button>
-            <br>
-            <br>
-       <input id="search_input" placeholder="Search Guest Nname" type="text">
-            <br>
-            <br>
-        <h3 id="searched_names"></h3>
-            <br>
-            <br>
-        <button id="search_name" onclick="search()">search a name</button>
-            <br>
-            <br>
         
+        <br>
+
+        <div class="col-lg-4 col-sm-8 col-xs-11" id="login_div2">
+            <h3>Player 2</h3>
+            <label>User name</label>
+            <input type="text" placeholder="Player 2 name" class="form-control" id="player_2">
+            <br>
+        </div>
+
+        
+        <button id="login_button" onclick="log()">Login</button>
+    
         </center>
-        <script src="main.js"></script>
+       </div>
+
+
+        <script src="main.js"></script> 
     </body>
 </html>

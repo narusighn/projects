@@ -1,28 +1,9 @@
-var guestList=[];
+function log(){
+    var pl_1=document.getElementById("player_1").value;
+    var pl_2=document.getElementById("player_2").value;
 
-function add(){
-    var name=document.getElementById("guest_1").value;
-    guestList.push(name);
-    console.log(guestList);
-    document.getElementById("guest_1").value="";
-}
+    localStorage.setItem("player1",pl_1);
+    localStorage.setItem("player2",pl_2);
 
-function show(){
-    document.getElementById("display_div").innerHTML=guestList;
-}
-
-function search(){
-    var searched_name=document.getElementById("search_input").value;
-
-    for(i=0;i<guestList.length;i++){
-        if(searched_name==guestList[i]){
-            
-            document.getElementById("searched_names").innerHTML=searched_name+" is there in the list";
-        }
-        else{
-            document.getElementById("searched_names").innerHTML="";
-        }
-    }
-        
-      
+    window.location="math_quiz.html";
 }

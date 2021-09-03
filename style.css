@@ -1,24 +1,23 @@
-body{
-   text-align: center;
-   background-color: lightsalmon;
+#login_div1{
+    background-color: skyblue;
+    margin-bottom: 50px;
+    margin-left: 575px;
 }
 
-#guest_1{
-    background-color: lightcoral;
+#screen_div{
+    text-align: center;
 }
 
-#search_input{
-    background-color: lightsalmon;
+#login_div2{
+    background-color: tomato;
+    margin-right: 1000px;
+    margin-left: 575px;
 }
 
-#add_list_butt{
-    background-color: lightseagreen;
+#login_screen{
+    background-color: salmon;
 }
 
-#show_list_butt{
-    background-color: lightseagreen;
-}
-
-#searched_name{
-    background-color: lightseagreen;
+#login_button{
+    margin-top: 150px;
 }
