@@ -1,51 +1,48 @@
 <html>
     <head>
-        <title>Math Quiz Game</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+        <title>Recognising Animals by Voice</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-
-    <body id="login_screen">
-
-       
-
-       <div id="screen_div">
+    <body>
         <center>
-            <div id="intro div">
-            <h1>Math Quiz Game</h1>
+        <h1>Recognising Animals by Voice</h1>
+        <h4>Play the animal sound like Roar,Mooing,Barking,Meowing and Buzzing</h4>
 
-            <br>
-            <br>
-             </div>
-        <div class="col-lg-4 col-sm-8 col-xs-11" id="login_div1">
-            <h3>Player 1</h3>
-            <label>User name</label>
-            <input type="text" placeholder="Player 1 name" class="form-control" id="player_1">
-            <br>
-        </div>
+        <div class="animals">
+
+            <img src="bee.jpg" id="beeImg">
+
+            <img src="lion.jpg" id="lionImg">
         
+            <img src="dog.jpg" id="dogImg">
+
+            <img src="cat.jpg" id="catImg">
+
+            <img src="cow.jpg" id="cowImg">
+
+        </div>
+
+        <br>
+        <br>
+        
+        <button id="start" class="btn btn-info" onclick="start()" >Start</button>
+
+        <br>
         <br>
 
-        <div class="col-lg-4 col-sm-8 col-xs-11" id="login_div2">
-            <h3>Player 2</h3>
-            <label>User name</label>
-            <input type="text" placeholder="Player 2 name" class="form-control" id="player_2">
-            <br>
-        </div>
+        <h4 id="soundName">I can hear= </h4>
+        <h4 id="soundAccuracy">Accuracy= </h4>
 
-        
-        <button id="login_button" onclick="log()">Login</button>
-    
-        </center>
-       </div>
+        <br>
+        <br>
+        <br>
 
-
-        <script src="main.js"></script> 
+        <div class="Narayani">Developed by Narayani</div>
+    </center>
     </body>
 </html>

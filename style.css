@@ -1,23 +1,37 @@
-#login_div1{
-    background-color: skyblue;
-    margin-bottom: 50px;
-    margin-left: 575px;
+#beeImg{
+    width:300px;
+    height: 300px;
 }
 
-#screen_div{
+#lionImg{
+    width:300px;
+    height: 300px;
+}
+
+#dogImg{
+    width:300px;
+    height: 300px;
+}
+
+#catImg{
+    width:300px;
+    height: 300px;
+}
+
+#cowImg{
+    width:300px;
+    height: 300px;
+}
+
+.Narayani{
+    text-shadow: 10px 6px 4px yellow;
+    font-size: 25px;
+    position: fixed;
+    width: 100%;
     text-align: center;
+    bottom: 0;
+    line-height: 5;
 }
 
-#login_div2{
-    background-color: tomato;
-    margin-right: 1000px;
-    margin-left: 575px;
-}
 
-#login_screen{
-    background-color: salmon;
-}
 
-#login_button{
-    margin-top: 150px;
-}
