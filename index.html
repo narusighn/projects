@@ -1,48 +1,81 @@
 <html>
-    <head>
-        <title>Recognising Animals by Voice</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <center>
-        <h1>Recognising Animals by Voice</h1>
-        <h4>Play the animal sound like Roar,Mooing,Barking,Meowing and Buzzing</h4>
+  <head>
+    <title>Hand Gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-        <div class="animals">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
-            <img src="bee.jpg" id="beeImg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-            <img src="lion.jpg" id="lionImg">
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <h4 class="btn btn-warning h4Button">Hand Gestures
         
-            <img src="dog.jpg" id="dogImg">
+      </h4>
+      <br><br>
 
-            <img src="cat.jpg" id="catImg">
+      <p style="font-size: 22px;">Take a selfie of your Hand Gesture
+      	<br>
+        <b ></b>
+        <br>
+        <b</b>
+        <br>
+        <b</b>
+        <br>
+      </p>
 
-            <img src="cow.jpg" id="cowImg">
-
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>webcam - </label>
+        <div id="camera">
+        
         </div>
 
-        <br>
-        <br>
+        <br><br>
+        <button id="capturePic" class="btn btn-info" onclick="take_jpegIMG()">Take a Picture</button>
+
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1: </label>
+        <p id="result_emotion_name" class="emotion_name"></p>
+
+        <p class="emoji" id="yellowFaces1"></p>
+
+
+
+        <label>Prediction 2: </label>
+        <p id="result_emotion_name2" class="emotion_name"></p>
+
+        <p class="emoji" id="yellowFaces2"></p>
+      </div>
+
+
+
+      
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>snapshot - </label>
+        <div id="finalProduct">
         
-        <button id="start" class="btn btn-info" onclick="start()" >Start</button>
+        </div>
 
-        <br>
-        <br>
+        <br><br>
+        <button id="Prediction" class="btn btn-info">result</button>
+      </div>
 
-        <h4 id="soundName">I can hear= </h4>
-        <h4 id="soundAccuracy">Accuracy= </h4>
 
-        <br>
-        <br>
-        <br>
-
-        <div class="Narayani">Developed by Narayani</div>
     </center>
-    </body>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
 </html>

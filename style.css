@@ -1,37 +1,43 @@
-#beeImg{
-    width:300px;
-    height: 300px;
+ody
+{
+  color: white;
+  background: #c0d3ff;
+}
+span
+{
+  font-size: 50px;
+  color: black;
+  fill: yellow;
+  background-color:yellow;
+  border-radius: 100px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
 }
 
-#lionImg{
-    width:300px;
-    height: 300px;
+.h4Button{
+  font-size: 20px;
+  letter-spacing: 10px;
 }
 
-#dogImg{
-    width:300px;
-    height: 300px;
+label{
+  background-color: teal;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 150px;
 }
-
-#catImg{
-    width:300px;
-    height: 300px;
-}
-
-#cowImg{
-    width:300px;
-    height: 300px;
-}
-
-.Narayani{
-    text-shadow: 10px 6px 4px yellow;
-    font-size: 25px;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    bottom: 0;
-    line-height: 5;
-}
-
-
-
