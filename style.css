@@ -1,43 +1,22 @@
-ody
-{
-  color: white;
-  background: #c0d3ff;
-}
-span
-{
-  font-size: 50px;
-  color: black;
-  fill: yellow;
-  background-color:yellow;
-  border-radius: 100px;
-}
-#camera , #result
-{
-  border: 2px dashed black;
-  width: 350px;
-  height: 300px; 
-}
-#result_emotion_name ,#result_emotion_name2  
-{
-  color: black;
-}
-.emotion_name
-{
-  font-size: 40px;
-}
-.emoji
-{
-  font-size:48px;
+body{
+    text-align: center;
 }
 
-.h4Button{
-  font-size: 20px;
-  letter-spacing: 10px;
+.btn-danger:hover{
+    background-color: greenyellow;
 }
 
-label{
-  background-color: teal;
-  font-size: 20px;
-  border-radius: 10px;
-  width: 150px;
+h2{
+    font-size: 35px !important;
+}
+
+Owl{
+    animation-name: owlarecool;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes owlarecool{
+    from{box-shadow: rgb(238, 14, 137) 3px,3px,100px;}
+    to{box-shadow: rgb(247, 7, 27) 3px,3px,100px;}
 }
