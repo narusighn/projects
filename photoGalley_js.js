@@ -8,7 +8,7 @@ var image=[
 ];
 
 var names=[
-    "Narayani Rashatwar","Snehal Rashatwar","Vasantrao Rashatwar","Minal Rashatwar","Prematai Rashatwar","Kaushiki Rashatwar"
+    "Narayani","Snehal","Vasantrao","Minal","Prematai","Kaushiki"
 ];
 
 var k=0;
@@ -23,7 +23,7 @@ function update(){
     }
 
     var updateImg= images[i];
-    var updateName= images[i];
+    var updateName= names[i];
 
     document.getElementById("image").src=updateImg;
     document.getElementById("names").src=updateName;
