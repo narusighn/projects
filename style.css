@@ -1,24 +1,34 @@
 body{
-    text-align: center;
-    background-position: center;
-    background-size: cover;
+    background-color: antiquewhite;
 }
 
-.btn-danger:hover{
-    background-color: greenyellow;
+#Score123{
+    font-size: 25px;
+    margin-left: -1500;
 }
 
-h2{
-    font-size: 35px !important;
+#Timer123{
+    font-size: 25px;
+    float: right;
+    margin-right: 50;
 }
 
-Owl{
-    animation-name: owlarecool;
-    animation-duration: 5s ;
-    animation-iteration-count: infinite;
+#Sketchname{
+    color: blueviolet;
+    font-size: 35px;
 }
 
-@keyframes owlarecool{
-    from{box-shadow: rgb(238, 14, 137) 3px,3px,100px;}
-    to{box-shadow: rgb(247, 7, 27) 3px,3px,100px;}
+#Sketch{
+    color: black;
+    font-size: 25px;
+}
+
+#SketchConfidence{
+    color: black;
+    font-size: 25px;
+}
+
+#show_sketch{
+    float: right;
+    
 }
