@@ -17,7 +17,7 @@ function setup(){
     video.size(400,400);
     video.hide();
 
-    poseNet=ml5.poseNet();
+    poseNet=ml5.poseNet(video,modelLoaded);
     poseNet.on('pose',gotPoses);
 }
 
@@ -31,10 +31,10 @@ function selfieTime(){
 
 function gotPoses(results){
     if(results.length>0){
-        noseX=results[0].pose.nose.x;
-        noseY=results[0].pose.nose.y;
+        noseX=results[0].pose.nose.x-10;
+        noseY=results[0].pose.nose.y-10;
         console.log(results);
-        console.log("nose_x = "+ results[0].pose.nose.x-5);
-        console.log("nose_y = "+ results[0].pose.nose.y-5);
+        console.log("nose_x = "+ results[0].pose.nose.x);
+        console.log("nose_y = "+ results[0].pose.nose.y);
     }
 }
