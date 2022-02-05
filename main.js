@@ -23,6 +23,12 @@ function draw(){
         TimerCunter=TimerCunter+1
         document.getElementById("Timer123").innerHTML="Time Left: "+TimerCunter;
         },10000);
+
+        strokeWeight(13);
+        stroke(0);
+        if(mouseIsPressed){
+            line(PmouseX,PmouseY,MouseX,MouseY);
+        }
 }
 
 function check_sketch(){
@@ -31,10 +37,15 @@ function check_sketch(){
 
 function setup(){
     canvas=createCanvas(600,500);
+    canvas.center()
+    background("white");
+    canvas.mouseRealesed(classifyCanvas);
+
+    synth=window.speechSynthesis;
 }
 
 function preload(){
-
+    classifier=ml5.imageClassifier()
 }
 
 function updateCanvas(){
@@ -42,3 +53,18 @@ function updateCanvas(){
     TimerCunter=0;
 }
 
+function classifyCanvas(){
+    classifier.classify( canvas,gotResults);
+}
+
+function gotResults(error,results){
+    if(error){
+        console.error(error);
+    }
+    console.log(results);
+    DrawnSketch=document.getElementById("label").innerHTML= "label"+ results[0].label;
+
+    document.getElementById("sketch").innerHTML=DrawnSketch;
+
+    document.getElementById("SketchConfidence").innerHTML= results[0].confidence;
+}
