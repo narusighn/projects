@@ -1,70 +1,56 @@
-TimerCunter=0;
-TimerCheck="";
-DrawnSketch="";
-Score=0;
+screenWidth="";
+screenHeight="";
+apple=0;
+speek_data="";
+to_number=0;
+draw_apple=0;
 
-
-quick_draw_data_set=["aircraft carrier","airplane","alarm clock","ambulance","angel","animal migration","ant","anvil","apple","arm","asparagus","axe","backpack","banana","bandage","barn","baseball","baseball bat","basket","basketball","bat","bathtub","beach","bear","beard","bed","bee","belt","bench","bicycle","binoculars","bird","birthday cake","blackberry","blueberry","book","boomerang","bottlecap","bowtie","bracelet","brain","bread","bridge","broccoli","broom","bucket","bulldozer","bus","bush","butterfly","cactus","cake","calculator","calendar","camel","camera","camouflage","campfire","candle","cannon","canoe","car","carrot","castle","cat","ceiling fan","cello","cell phone","chair","chandelier","church","circle","clarinet","clock","cloud","coffee cup","compass","computer","cookie","cooler","couch","cow","crab","crayon","crocodile","crown","cruise ship","cup","diamond","dishwasher","diving board","dog","dolphin","donut","door","dragon","dresser","drill","drums","duck","dumbbell","ear", "elbow","elephant","envelope","eraser","eye","eyeglasses","face","fan","feather","fence","finger","fire hydrant","fireplace","firetruck","fish","flamingo","flashlight","flip flops","floor lamp","flower","flying saucer","foot","fork","frog","frying pan","garden","garden hose","giraffe","goatee","golf club","grapes","grass","guitar","hamburger","hammer","hand","harp","hat","headphones","hedgehog","helicopter","helmet","hexagon","hockey puck","hockey stick","horse","hospital","hot air balloon","hot dog","hot tub","hourglass","house","house plant","hurricane","ice cream","jacket","jail","kangaroo","key","keyboard","knee","knife","ladder","lantern","laptop","leaf","leg","light bulb","lighter","lighthouse","lightning","line","lion","lipstick","lobster","lollipop","mailbox","map","marker","matches","megaphone","mermaid","microphone","microwave","monkey","moon","mosquito","motorbike","mountain","mouse","moustache","mouth","mug","mushroom","nail","necklace","nose","ocean","octagon","octopus","onion","oven","owl","paintbrush","paint can","palm tree","panda","pants","paper clip","parachute","parrot","passport","peanut","pear","peas","pencil","penguin","piano","pickup truck","picture frame","pig","pillow","pineapple","pizza","pliers","police car","pond","pool","popsicle","postcard","potato","power outlet","purse","rabbit","raccoon","radio","rain","rainbow","rake","remote control","rhinoceros","rifle","river","roller coaster","rollerskates","sailboat","sandwich","saw","saxophone","school bus","scissors","scorpion","screwdriver","sea turtle","see saw","shark","sheep","shoe","shorts","shovel","sink","skateboard","skull","skyscraper","sleeping bag","smiley face","snail","snake","snorkel","snowflake","snowman","soccer ball","sock","speedboat","spider","spoon","spreadsheet","square","squiggle","squirrel","stairs","star","steak","stereo","stethoscope","stitches","stop sign","stove","strawberry","streetlight","string bean","submarine","suitcase","sun","swan","sweater","swingset","sword","syringe","table","teapot","teddy-bear","telephone","television","tennis racquet","tent","The Eiffel Tower","The Great Wall of China","The Mona Lisa","tiger","toaster","toe","toilet","tooth","toothbrush","toothpaste","tornado","tractor","traffic light","train","tree","triangle","trombone","truck","trumpet","tshirt","umbrella","underwear","van","vase","violin","washing machine","watermelon","waterslide","whale","wheel","windmill","wine bottle","wine glass","wristwatch","yoga","zebra","zigzag"]
-
-random_no = Math.floor((Math.random()*quick_draw_data_set.length)+1)
-
-console.log(quick_draw_data_set[random_no]);
-
-Sketch=quick_draw_data_set[random_no]
-
-document.getElementById("Sketchname").innerHTML="Sketch to be Drawn- "+Sketch;
-//for(i=0;i<=60;i++){
-    
-//}
-
-
-function draw(){
-    setTimeout(function(){
-        TimerCunter=TimerCunter+1
-        document.getElementById("Timer123").innerHTML="Time Left: "+TimerCunter;
-        },10000);
-
-        strokeWeight(13);
-        stroke(0);
-        if(mouseIsPressed){
-            line(PmouseX,PmouseY,MouseX,MouseY);
-        }
-}
-
-function check_sketch(){
-    
+function preload(){
+    loadImage(apple.png);
 }
 
 function setup(){
-    canvas=createCanvas(600,500);
-    canvas.center()
-    background("white");
-    canvas.mouseRealesed(classifyCanvas);
-
-    synth=window.speechSynthesis;
+    screenWidth=window.innerWidth;
+    screenHeight=window.innerHeight;
+    createCanvas(screenWidth,screenHeight-150);
+    canvas.position(0,150);
 }
 
-function preload(){
-    classifier=ml5.imageClassifier()
+SpeechRecognition=window.webkitSpeechRecongnition;
+recognition=new SpeechRecognition();
+
+function start(){
+    document.getElementById("status").innerHTML="Listening Say a number ";
+    recognition.start();
 }
 
-function updateCanvas(){
-    background("white")
-    TimerCunter=0;
-}
-
-function classifyCanvas(){
-    classifier.classify( canvas,gotResults);
-}
-
-function gotResults(error,results){
-    if(error){
-        console.error(error);
+recognition.onresult=function(event){
+    console.log(event);
+    
+    content=event.results[0][0].transcript;
+    document.getElementById("status").innerHTML="speech recognised as ";
+    to_number=Number(content);
+ 
+ 
+    if(Number.isInteger(to_number)){
+    document.getElementById("status").innerHTML="Drawing Apple";
     }
-    console.log(results);
-    DrawnSketch=document.getElementById("label").innerHTML= "label"+ results[0].label;
+    else{
+       
+    document.getElementById("status").innerHTML="speech is not recognised as a number. Try again "; 
+    }
+}
 
-    document.getElementById("sketch").innerHTML=DrawnSketch;
+function draw(){
+    if(draw_apple=="set"){
+        for(var i=1; i<=to_number; i++ )
+        x=Math.floor(Math.random()*700);
+        y=Math.floor(Math.random()*400);
+        image(apple,x,y,50,50);
+        
+        document.getElementById("status").innerHTML=to_number+"Apples Drawn";
 
-    document.getElementById("SketchConfidence").innerHTML= results[0].confidence;
+        utterThis=new SpeechSynthesisUtterance(to_number+"Apples Drawn");
+       synth.speak(utterThis);
+
 }
