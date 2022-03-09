@@ -1,48 +1,26 @@
-body{
-    background-color: antiquewhite;
+.header{
+    font-size: 30px;
+    color: aliceblue;
 }
 
-#Score123{
+.notES{
+    font-size: 20px;
+    color: yellow;
+    font-weight: 700;
+}
+
+#Height_Weight{
     font-size: 25px;
-    margin-left: -1500;
+    color: aliceblue;
 }
 
-#Timer123{
-    font-size: 25px;
-    float: right;
-    margin-right: 50;
-}
-
-#Sketchname{
-    color: blueviolet;
-    font-size: 35px;
-}
-
-#Sketch{
-    color: black;
-    font-size: 25px;
-}
-
-#SketchConfidence{
-    color: black;
-    font-size: 25px;
-}
-
-#show_sketch{
-    float: right;
-    
-}
-
-canvas{
-    background-color: rgb(255, 252, 255);
-    margin-left: 575px;
-    border-radius: 20px;
-    animation-name: example;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes example{
-    from {box-shadow:10px,10px,70px palevioletred;}
-    to {box-shadow:10px,10px,70px rgb(194, 54,101);}
+.footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(47, 196, 2);
+    color: white;
+    line-height: 2;
+    font-size: 20px;
 }
