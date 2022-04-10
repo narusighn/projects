@@ -1,26 +1,25 @@
-.header{
-    font-size: 30px;
-    color: aliceblue;
+body{
+    background-size:cover;
 }
 
-.notES{
-    font-size: 20px;
-    color: yellow;
-    font-weight: 700;
-}
-
-#Height_Weight{
-    font-size: 25px;
-    color: aliceblue;
-}
-
-.footer{
-    position: fixed;
-    bottom: 0;
-    text-align: center;
+#header{
     width: 100%;
-    background-color: rgb(47, 196, 2);
-    color: white;
-    line-height: 2;
+    margin-top: 0;
     font-size: 20px;
 }
+
+.note{
+    font-size: 16px !important;
+}
+
+#Song_name{
+    font-size: 18px;
+}
+
+canvas{
+    background-color: aquamarine;
+    border-color: turquoise;
+    width: 400px;
+    height: 400px;
+}
+
