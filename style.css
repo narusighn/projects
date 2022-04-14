@@ -17,9 +17,6 @@ body{
 }
 
 canvas{
-    background-color: aquamarine;
     border-color: turquoise;
-    width: 400px;
-    height: 400px;
 }
 
