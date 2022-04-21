@@ -4,6 +4,8 @@ var l_wristX="";
 var l_wristY="";
 var r_wristX="";
 var r_wristY="";
+var score_LW="";
+var whichSong="";
 
 function preload(){
     music1=loadSound("music.mp3");
@@ -24,6 +26,17 @@ function setup(){
 
 function draw(){
     image(Mirror,0,0,800,500);
+
+    fill("red");
+    stroke("black");
+    circle(l_wristX,l_wristY,20);
+
+    if(score_LW>=0.2){
+        music1.play();
+        document.getElementById("Song_name").innerHTML="Music1";
+        music2.setVolume(0);
+    }
+
 }
 
 function start(){
@@ -42,5 +55,7 @@ function gotResults(results){
         l_wristY=results[0].pose.leftWrist.y;
         r_wristX=results[0].ppose.rightWrist.x;
         r_wristY=results[0].pose.rightWrist.y;
+
+        score_LW=results[0].pose.keypoints[9].score;
     }
 }
