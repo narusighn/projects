@@ -14,3 +14,13 @@
     display: inline;
     font-size: 30px;
 }
+
+.footer{
+    margin-bottom: 0%;
+    color: darkgray;
+    border: black;
+}
+
+.modal-dialog{
+    width: 90%;
+}
